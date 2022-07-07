@@ -17,32 +17,44 @@
     <title>Quiz</title>
   </head>
   <body>
-    <div class="container m-5" id="start">
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <h5 class="card-title">Test your knowledge</h5>
-          <p class="card-text">Some quick description about the quiz .</p>
-          <a class="btn btn-primary">Start</a>
+    <div class="container" id="start">
+      <div class="card m-5" style="text-align: center">
+        <div class="card-body" style="background-color: rgb(214, 219, 231)">
+          <h5 class="card-title" style="text-transform: uppercase">
+            Test your knowledge
+          </h5>
+          <p class="card-text">
+            Complete these 5 questions under <strong>one</strong> minute
+          </p>
+          <a
+            class="btn btn-primary"
+            style="background-color: rgb(213, 188, 241)"
+            ><strong> Start </strong></a
+          >
         </div>
       </div>
     </div>
 
     <!-- (B) QUIZ CONTAINER -->
     <div class="container" id="quizBlock" style="display: none">
-      <div class="mb-5">
-        <h2>Test your knowledge</h2>
-        - Time remaining <span id="time">01:00</span>
+      <div class="mb-5 mt-3 text-center">
+        <h2 style="font-weight: 'bold'">Test your knowledge</h2>
+        <span id="timeRemaining">
+          <strong> Time remaining </strong><span id="time">01:00</span></span
+        >
       </div>
-      <div id="quizWrap"></div>
+      <div id="quizWrap" style="background-color: rgb(232, 225, 240)"></div>
 
-      <div>
+      <div class="m-3 text-center">
         <button type="button" class="btn btn-primary" id="btnSubmit">
           Submit Quiz
         </button>
         <button type="button" class="btn btn-primary" id="btnReset">
           Reset Quiz
         </button>
-        <span id="score"></span>
+        <br />
+        <span id="score" class="m-2">Press "Submit" to see your score</span>
+        <br />
       </div>
     </div>
 
